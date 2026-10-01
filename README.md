@@ -6,7 +6,7 @@ I'm **Arsalan Ali Ahmed**, a Full-Stack & UI/UX Developer focused on building mo
 
 This portfolio showcases my projects, development skills, UI/UX work, and experience building full-stack web applications using modern technologies.
 
-![Portfolio Preview](./public/assets/projects-screenshots/portfolio/landing.png)
+
 
 ---
 

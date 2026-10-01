@@ -1,21 +1,20 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Arsalan Ali Ahmed | MERN-Stack Developer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of Arsalan Ali Ahmed, a MERN-stack developer and creative technologist specializing in interactive web experiences, and innovative projects. Discover my latest work, including Personal Finance Dashboard, A Library Management Website, and more. Let's build something amazing together!",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of Arsalan Ali Ahmed, a MERN-stack developer creating interactive web experiences and innovative projects.",
   },
   keywords: [
-    "Naresh",
+    "Arsalan Ali Ahmed",
     "portfolio",
-    "full-stack developer",
+    "MERN-stack developer",
     "creative technologist",
     "web development",
     "3D animations",
     "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
+    "Personal Finance Dashboard",
+    "Library Management Website",
     "web design",
     "GSAP",
     "React",
@@ -23,23 +22,23 @@ const config = {
     "Spline",
     "Framer Motion",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
+  author: "Arsalan Ali Ahmed",
+  email: "arsalanaliahmed17@gmail.com",
   site: "https://nareshkhatri.site",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
+  githubUsername: "Arsalanali18",
   githubRepo: "3d-portfolio",
 
   get ogImg() {
-    return this.site + "/assets/seo/og-image.png";
+    return this.site + "/assets/seo/og-im1age.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    twitter: "https://x.com/",
+    linkedin: "https://www.linkedin.com/in/arsalan-ali-ahmed",
+    instagram: "https://www.instagram.com/_arsalan._.ali_/",
+    facebook: "https://www.facebook.com/",
+    github: "https://github.com/Arsalanali18",
   },
 };
 export { config };

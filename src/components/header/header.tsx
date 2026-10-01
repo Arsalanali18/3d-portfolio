@@ -55,7 +55,7 @@ const Header = ({ loader }: HeaderProps) => {
         </Link>
 
         <FunnyThemeToggle className="w-6 h-6 mr-4 hidden md:flex" />
-        <OnlineUsers />
+        {/* <OnlineUsers /> */}
         {config.githubUsername && config.githubRepo && (
           <GitHubStarsButton
             username={config.githubUsername}

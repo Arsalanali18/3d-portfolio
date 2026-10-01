@@ -331,7 +331,7 @@ function Page() {
                 </Splide>
               )}
             </div>
-            {/* <div className="">
+            <div className="">
               <Splide
                 options={{
                   type: "loop",
@@ -358,7 +358,7 @@ function Page() {
                   </SplideSlide>
                 ))}
               </Splide>
-            </div> */}
+            </div>
           </div>
         </main>
       </div>
@@ -367,3 +367,195 @@ function Page() {
 }
 
 export default Page;
+
+// "use client";
+
+// import React, { useEffect, useState } from "react";
+// import dynamic from "next/dynamic";
+
+// // Icons
+// import { DiMongodb, DiNginx, DiNpm, DiPostgresql, DiVim } from "react-icons/di";
+// import {
+//   FaAws,
+//   FaCss3,
+//   FaDocker,
+//   FaEnvelope,
+//   FaGit,
+//   FaGithub,
+//   FaHtml5,
+//   FaLinkedin,
+//   FaLinux,
+//   FaNodeJs,
+//   FaPhone,
+//   FaReact,
+//   FaVuejs,
+//   FaYarn,
+// } from "react-icons/fa6";
+// import {
+//   RiFirebaseFill,
+//   RiTailwindCssFill,
+// } from "react-icons/ri";
+// import {
+//   SiExpress,
+//   SiKubuntu,
+//   SiPrettier,
+//   SiTypescript,
+//   SiVercel,
+//   SiVscodium,
+// } from "react-icons/si";
+// import { TbTerminal2 } from "react-icons/tb";
+
+// // Splide (CLIENT ONLY)
+// import "@splidejs/react-splide/css";
+
+// const Splide = dynamic(
+//   () => import("@splidejs/react-splide").then((mod) => mod.Splide),
+//   { ssr: false }
+// );
+
+// const SplideSlide = dynamic(
+//   () => import("@splidejs/react-splide").then((mod) => mod.SplideSlide),
+//   { ssr: false }
+// );
+
+// const CONTACT_LINKS = [
+//   {
+//     name: "Email",
+//     content: "naresh.khatri2345@gmail.com",
+//     href: "mailto:naresh.khatri2345@gmail.com",
+//     icon: <FaEnvelope />,
+//   },
+//   {
+//     name: "Phone",
+//     content: "1234567890",
+//     href: "tel:1234567890",
+//     icon: <FaPhone />,
+//   },
+//   {
+//     name: "LinkedIn",
+//     href: "https://www.linkedin.com/in/naresh-khatri/",
+//     content: "/naresh-khatri",
+//     icon: <FaLinkedin />,
+//   },
+//   {
+//     name: "GitHub",
+//     href: "https://github.com/Naresh-Khatri",
+//     content: "/naresh-khatri",
+//     icon: <FaGithub />,
+//   },
+// ];
+
+// const TOOLS = [
+//   { name: "JavaScript", icon: <FaNodeJs size={50} color="#f0db4f" /> },
+//   { name: "TypeScript", icon: <SiTypescript size={50} color="#007acc" /> },
+//   { name: "HTML", icon: <FaHtml5 size={50} color="#e34c26" /> },
+//   { name: "CSS", icon: <FaCss3 size={50} color="#563d7c" /> },
+//   { name: "Node.js", icon: <FaNodeJs size={50} color="#6cc24a" /> },
+//   { name: "React", icon: <FaReact size={50} color="#61dafb" /> },
+//   { name: "Docker", icon: <FaDocker size={50} color="#2496ed" /> },
+//   { name: "Nginx", icon: <DiNginx size={50} color="#008000" /> },
+//   { name: "Vue", icon: <FaVuejs size={50} color="#41b883" /> },
+//   { name: "Express", icon: <SiExpress size={50} color="#ffffff" /> },
+//   { name: "PostgreSQL", icon: <DiPostgresql size={50} color="#336791" /> },
+//   { name: "MongoDB", icon: <DiMongodb size={50} color="#4db33d" /> },
+//   { name: "Tailwind", icon: <RiTailwindCssFill size={50} color="#06b6d4" /> },
+//   { name: "Firebase", icon: <RiFirebaseFill size={50} color="#FFCA28" /> },
+//   { name: "Git", icon: <FaGit size={50} color="#f05032" /> },
+//   { name: "GitHub", icon: <FaGithub size={50} color="#ffffff" /> },
+//   { name: "VS Code", icon: <SiVscodium size={50} color="#007acc" /> },
+//   { name: "VIM", icon: <DiVim size={50} color="#ffffff" /> },
+//   { name: "Prettier", icon: <SiPrettier size={50} color="#f7b93c" /> },
+//   { name: "NPM", icon: <DiNpm size={50} color="#CB3837" /> },
+//   { name: "Yarn", icon: <FaYarn size={50} color="#2C8EBB" /> },
+//   { name: "Vercel", icon: <SiVercel size={50} color="#ffffff" /> },
+//   { name: "Linux", icon: <FaLinux size={50} color="#ffffff" /> },
+//   { name: "Kubuntu", icon: <SiKubuntu size={50} color="#0077C4" /> },
+//   { name: "Terminal", icon: <TbTerminal2 size={50} color="#ffffff" /> },
+//   { name: "AWS", icon: <FaAws size={50} color="#ff9900" /> },
+// ];
+
+// export default function Page() {
+//   const [mounted, setMounted] = useState(false);
+
+//   useEffect(() => {
+//     setMounted(true);
+//   }, []);
+
+//   const reversedTools = [...TOOLS].reverse();
+
+//   if (!mounted) return null;
+
+//   return (
+//     <div className="container mx-auto px-4 md:px-12 xl:px-48 text-zinc-300 py-20">
+//       <div className="flex flex-col lg:flex-row gap-6">
+//         <aside className="w-full lg:w-1/4">
+//           <div className="p-6 rounded-2xl border border-zinc-600 backdrop-blur">
+//             <div className="flex flex-col items-center gap-4">
+//               <img
+//                 src="/assets/me.jpg"
+//                 alt="Profile"
+//                 className="w-32 h-32 rounded-full bg-zinc-800 p-2"
+//               />
+//               <h2 className="text-xl">Naresh Khatri</h2>
+//               <span className="text-xs bg-zinc-700 px-3 py-1 rounded-full">
+//                 Web Developer
+//               </span>
+//             </div>
+
+//             <hr className="my-6 border-zinc-600" />
+
+//             <ul className="flex flex-col gap-3">
+//               {CONTACT_LINKS.map((link) => (
+//                 <li key={link.name}>
+//                   <a
+//                     href={link.href}
+//                     className="flex items-center gap-3 p-3 bg-zinc-800 border border-zinc-700 rounded-md hover:border-zinc-500"
+//                   >
+//                     {link.icon}
+//                     <div>
+//                       <div className="text-sm">{link.name}</div>
+//                       <div className="text-xs text-zinc-500">
+//                         {link.content}
+//                       </div>
+//                     </div>
+//                   </a>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//         </aside>
+
+//         <main className="flex-1">
+//           <div className="p-8 border border-zinc-600 rounded-md backdrop-blur">
+//             <h1 className="text-3xl mb-6">About me</h1>
+//             <p className="mb-6">
+//               I&apos;m Naresh, a Full-stack developer passionate about building
+//               meaningful digital experiences.
+//             </p>
+
+//             <h2 className="text-3xl mb-6">Stuff I use</h2>
+
+//             <Splide
+//               options={{
+//                 type: "loop",
+//                 autoplay: true,
+//                 interval: 2000,
+//                 perPage: 5,
+//                 arrows: false,
+//                 pagination: false,
+//               }}
+//             >
+//               {reversedTools.map((tool) => (
+//                 <SplideSlide key={tool.name}>
+//                   <div className="p-2 border border-zinc-600 rounded-md w-fit mx-auto">
+//                     {tool.icon}
+//                   </div>
+//                 </SplideSlide>
+//               ))}
+//             </Splide>
+//           </div>
+//         </main>
+//       </div>
+//     </div>
+//   );
+// }

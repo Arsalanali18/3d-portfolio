@@ -77,7 +77,7 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text ",
                     )}
                   >
-                    A MERN Stack Web Developer
+                    A Frontend / MERN Stack Developer
                   </p>
                 </BlurIn>
               </div>

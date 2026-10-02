@@ -6,7 +6,8 @@ import { ArrowUpRight, ExternalLink, Link2, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiNodejsFill, RiReactjsFill,   RiHtml5Fill,
+  RiCss3Fill, } from "react-icons/ri";
 import {
   SiChakraui,
   SiDocker,
@@ -222,6 +223,19 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiSupabase />,
   },
+  html: {
+  title: "HTML5",
+  bg: "#E34F26",
+  fg: "#FFFFFF",
+  icon: <RiHtml5Fill />,
+},
+
+css: {
+  title: "CSS3",
+  bg: "#1572B6",
+  fg: "#FFFFFF",
+  icon: <RiCss3Fill />,
+},
 };
 export type Project = {
   id: string;
@@ -512,6 +526,105 @@ const projects: Project[] = [
         {/* <SlideShow
           images={[`${BASE_PATH}/synkronize/ui.png`]}
         /> */}
+      </div>
+    );
+  },
+},
+{
+  id: "movie-seat-booking",
+  category: "JavaScript",
+  title: "Movie Seat Booking",
+  src: "/assets/projects-screenshots/movie-seat-booking/movie-seat-booking.png",
+  screenshots: ["movie-seat-booking.png"],
+  live: "https://movie-seat-booking-nine-gamma.vercel.app/",
+  github: "https://github.com/Arsalanali18/movie-seat-booking",
+
+  skills: {
+    frontend: [
+      PROJECT_SKILLS.html,
+      PROJECT_SKILLS.css,
+      PROJECT_SKILLS.js,
+    ],
+    backend: [],
+  },
+
+  get content() {
+    return (
+      <div>
+        <TypographyP className="font-mono">
+          Movie Seat Booking is an interactive movie ticket booking interface
+          built with HTML, CSS, and JavaScript. Users can select a movie,
+          choose available seats, and view their total ticket price in
+          real time.
+        </TypographyP>
+
+        <ProjectsLinks live={this.live} repo={this.github} />
+
+        <p className="font-mono mb-2 mt-8">
+          The application provides an interactive cinema seating layout with
+          available, selected, and occupied seats. Movie selection, seat
+          selection, and ticket pricing are handled dynamically using
+          JavaScript.
+        </p>
+
+        <SlideShow
+          images={[
+            `${BASE_PATH}/movie-seat-booking/movie-seat-booking.png`,
+          ]}
+        />
+
+        <TypographyH3 className="my-4 mt-8">
+          Interactive Seat Selection
+        </TypographyH3>
+
+        <p className="font-mono mb-2">
+          Users can select and deselect available seats while occupied seats
+          remain unavailable. The interface provides clear visual states for
+          available, selected, and occupied seats.
+        </p>
+
+        <SlideShow
+          images={[
+            `${BASE_PATH}/movie-seat-booking/seats.png`,
+          ]}
+        />
+
+        <TypographyH3 className="my-4 mt-8">
+          Dynamic Ticket Pricing
+        </TypographyH3>
+
+        <p className="font-mono mb-2">
+          Users can choose from different movies with different ticket
+          prices. The application automatically calculates the number of
+          selected seats and updates the total ticket price as selections
+          change.
+        </p>
+
+        <SlideShow
+          images={[
+            `${BASE_PATH}/movie-seat-booking/movie-selection.png`,
+          ]}
+        />
+
+        <TypographyH3 className="my-4 mt-8">
+          Local Storage
+        </TypographyH3>
+
+        <p className="font-mono mb-2">
+          Movie selection, ticket price, and selected seats are stored using
+          the browsers Local Storage API. This allows the application to
+          restore the users selections after refreshing the page.
+        </p>
+
+        <TypographyH3 className="my-4 mt-8">
+          Frontend Development
+        </TypographyH3>
+
+        <p className="font-mono mb-2">
+          Built with vanilla HTML, CSS, and JavaScript, the project focuses on
+          DOM manipulation, event handling, dynamic UI updates, client-side
+          state management, and responsive frontend development.
+        </p>
       </div>
     );
   },
